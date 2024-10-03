@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+    rel="stylesheet">
+    <!--  -->
+</head>
+
+<body style="display: flex; flex-direction: column;">
+    <div class="app-container">
+        <h1>To-Do List</h1>
+
+        <div class="task-input">
+            <input type="text" id="taskName" placeholder="Enter your task..." />
+            <input type="datetime-local" id="taskDateTime" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <div class="copyright">
+        Designed By Moiz
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
